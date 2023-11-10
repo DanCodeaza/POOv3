@@ -15,7 +15,7 @@ object TellMeMoreForm: TTellMeMoreForm
     Left = 56
     Top = 48
     Width = 499
-    Height = 201
+    Height = 150
     Caption = 
       'Carbon dioxide (CO2) is a colorless, odorless gas vital to the E' +
       'arth'#39's atmosphere. Comprising one carbon atom and two oxygen ato' +
@@ -42,5 +42,14 @@ object TellMeMoreForm: TTellMeMoreForm
     Caption = 'Exit'
     TabOrder = 0
     OnClick = ExitClick
+  end
+  object Previous: TButton
+    Left = 440
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Previous'
+    TabOrder = 1
+    OnClick = PreviousClick
   end
 end

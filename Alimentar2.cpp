@@ -3,35 +3,38 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "Alimentar1.h"
-#include "Menu.h"
 #include "Alimentar2.h"
+#include "Alimentar1.h"
+#include "Alimentar3.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TAlimentarForm1 *AlimentarForm1;
+TAlimentarForm2 *AlimentarForm2;
 //---------------------------------------------------------------------------
-__fastcall TAlimentarForm1::TAlimentarForm1(TComponent* Owner)
+__fastcall TAlimentarForm2::TAlimentarForm2(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TAlimentarForm1::ExitClick(TObject *Sender)
+
+void __fastcall TAlimentarForm2::ExitClick(TObject *Sender)
 {
     Application->Terminate();
 }
 //---------------------------------------------------------------------------
-void __fastcall TAlimentarForm1::PreviousClick(TObject *Sender)
+
+void __fastcall TAlimentarForm2::NextClick(TObject *Sender)
 {
-	TMenuForm *newForm= new TMenuForm(NULL);
-	newForm->Show();
+	TAlimentarForm3* newForm = new TAlimentarForm3(NULL);
+	newForm -> Show();
     this->Hide();
 }
 //---------------------------------------------------------------------------
- void __fastcall TAlimentarForm1::NextClick(TObject *Sender)
+
+void __fastcall TAlimentarForm2::PreviousClick(TObject *Sender)
 {
-	TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
-	newForm1->Show();
+	TAlimentarForm1* newForm1 = new TAlimentarForm1(NULL);
+	newForm1 -> Show();
     this->Hide();
 }
 //---------------------------------------------------------------------------

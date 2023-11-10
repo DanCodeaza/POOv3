@@ -3,30 +3,21 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "TellMeMore.h"
-#include "Menu.h"
+#include "AlimentarResult.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TTellMeMoreForm *TellMeMoreForm;
+TAlimentarFormResult *AlimentarFormResult;
 //---------------------------------------------------------------------------
-__fastcall TTellMeMoreForm::TTellMeMoreForm(TComponent* Owner)
+__fastcall TAlimentarFormResult::TAlimentarFormResult(TComponent* Owner)
 	: TForm(Owner)
 {
-	TellMeMoreForm->BorderStyle=bsNone;
-	TellMeMoreForm->WindowState=wsMaximized;
-    Label1->Font->Size=12;
 }
 //---------------------------------------------------------------------------
-void __fastcall TTellMeMoreForm::ExitClick(TObject *Sender)
+
+void __fastcall TAlimentarFormResult::ExitClick(TObject *Sender)
 {
     Application->Terminate();
 }
 //---------------------------------------------------------------------------
-void __fastcall TTellMeMoreForm::PreviousClick(TObject *Sender)
-{
-	TMenuForm* newForm = new TMenuForm(NULL);
-	newForm -> Show();
-	this->Close();
-}
 

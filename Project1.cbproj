@@ -127,6 +127,24 @@
             <DependentOn>Alimentar1.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Alimentar2.cpp">
+            <Form>AlimentarForm2</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Alimentar2.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Alimentar3.cpp">
+            <Form>AlimentarForm3</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Alimentar3.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="AlimentarResult.cpp">
+            <Form>AlimentarFormResult</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>AlimentarResult.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Menu.cpp">
             <Form>MenuForm</Form>
             <FormType>dfm</FormType>
@@ -146,9 +164,12 @@
             <DependentOn>TellMeMore.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
-        <FormResources Include="TellMeMore.dfm"/>
         <FormResources Include="Menu.dfm"/>
+        <FormResources Include="TellMeMore.dfm"/>
         <FormResources Include="Alimentar1.dfm"/>
+        <FormResources Include="Alimentar2.dfm"/>
+        <FormResources Include="Alimentar3.dfm"/>
+        <FormResources Include="AlimentarResult.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

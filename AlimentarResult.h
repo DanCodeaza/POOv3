@@ -1,26 +1,30 @@
 //---------------------------------------------------------------------------
 
-#ifndef TellMeMoreH
-#define TellMeMoreH
+#ifndef AlimentarResultH
+#define AlimentarResultH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
 //---------------------------------------------------------------------------
-class TTellMeMoreForm : public TForm
+class TAlimentarFormResult : public TForm
 {
 __published:	// IDE-managed Components
 	TLabel *Label1;
+	TButton *Button1;
+	TButton *Button2;
 	TButton *Exit;
-	TButton *Previous;
+	TProgressBar *ProgressBar1;
+	TLabel *Label2;
+	TLabel *Label3;
 	void __fastcall ExitClick(TObject *Sender);
-	void __fastcall PreviousClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TTellMeMoreForm(TComponent* Owner);
+	__fastcall TAlimentarFormResult(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TTellMeMoreForm *TellMeMoreForm;
+extern PACKAGE TAlimentarFormResult *AlimentarFormResult;
 //---------------------------------------------------------------------------
 #endif

@@ -2,8 +2,8 @@ object MenuForm: TMenuForm
   Left = 0
   Top = 0
   Caption = 'Menu'
-  ClientHeight = 398
-  ClientWidth = 526
+  ClientHeight = 426
+  ClientWidth = 647
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

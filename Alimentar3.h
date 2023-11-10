@@ -1,26 +1,34 @@
 //---------------------------------------------------------------------------
 
-#ifndef TellMeMoreH
-#define TellMeMoreH
+#ifndef Alimentar3H
+#define Alimentar3H
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
-class TTellMeMoreForm : public TForm
+class TAlimentarForm3 : public TForm
 {
 __published:	// IDE-managed Components
-	TLabel *Label1;
-	TButton *Exit;
 	TButton *Previous;
-	void __fastcall ExitClick(TObject *Sender);
+	TButton *Next;
+	TButton *Exit;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TRadioGroup *RadioGroup1;
+	TRadioGroup *RadioGroup2;
+	TRadioGroup *RadioGroup3;
 	void __fastcall PreviousClick(TObject *Sender);
+	void __fastcall NextClick(TObject *Sender);
+	void __fastcall ExitClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TTellMeMoreForm(TComponent* Owner);
+	__fastcall TAlimentarForm3(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TTellMeMoreForm *TellMeMoreForm;
+extern PACKAGE TAlimentarForm3 *AlimentarForm3;
 //---------------------------------------------------------------------------
 #endif

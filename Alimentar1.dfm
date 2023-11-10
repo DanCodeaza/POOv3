@@ -14,23 +14,25 @@ object AlimentarForm1: TAlimentarForm1
   object Label1: TLabel
     Left = 32
     Top = 24
-    Width = 34
+    Width = 374
     Height = 15
-    Caption = 'Label1'
+    Caption = 
+      'Where do you usually purchase the majority of the food you consu' +
+      'me?'
   end
   object Label2: TLabel
     Left = 32
     Top = 152
-    Width = 34
+    Width = 206
     Height = 15
-    Caption = 'Label2'
+    Caption = 'What is your diet mainly composed of?'
   end
   object Label3: TLabel
     Left = 32
     Top = 283
-    Width = 34
+    Width = 267
     Height = 15
-    Caption = 'Label3'
+    Caption = 'Label3How processed are the foods you consume?'
   end
   object Previous: TButton
     Left = 368
@@ -48,6 +50,7 @@ object AlimentarForm1: TAlimentarForm1
     Height = 25
     Caption = 'Next'
     TabOrder = 1
+    OnClick = NextClick
   end
   object Exit: TButton
     Left = 545
@@ -62,9 +65,12 @@ object AlimentarForm1: TAlimentarForm1
     Tag = 1
     Left = 32
     Top = 41
-    Width = 185
+    Width = 281
     Height = 105
-    Caption = 'RadioGroup1'
+    Items.Strings = (
+      'International supermarkets'
+      'Stores with products from your native country'
+      'Local producers')
     TabOrder = 3
   end
   object RadioGroup2: TRadioGroup
@@ -72,89 +78,22 @@ object AlimentarForm1: TAlimentarForm1
     Left = 32
     Top = 172
     Width = 185
-    Height = 105
-    Caption = 'RadioGroup2'
+    Height = 85
+    Items.Strings = (
+      'Meat and animal products'
+      'Vegetables and cereals')
     TabOrder = 4
   end
   object RadioGroup3: TRadioGroup
     Tag = 3
     Left = 32
     Top = 304
-    Width = 185
+    Width = 249
     Height = 105
-    Caption = 'RadioGroup3'
+    Items.Strings = (
+      'The food comes directly from the farm.'
+      'The food is largely processed.'
+      'I only consume processed foods.')
     TabOrder = 5
-  end
-  object RadioButton1: TRadioButton
-    Tag = 1
-    Left = 32
-    Top = 57
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton1'
-    TabOrder = 6
-  end
-  object RadioButton2: TRadioButton
-    Tag = 1
-    Left = 32
-    Top = 88
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton2'
-    TabOrder = 7
-  end
-  object RadioButton3: TRadioButton
-    Tag = 1
-    Left = 32
-    Top = 120
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton3'
-    TabOrder = 8
-  end
-  object RadioButton4: TRadioButton
-    Tag = 2
-    Left = 32
-    Top = 184
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton4'
-    TabOrder = 9
-  end
-  object RadioButton5: TRadioButton
-    Tag = 2
-    Left = 32
-    Top = 216
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton5'
-    TabOrder = 10
-  end
-  object RadioButton6: TRadioButton
-    Tag = 2
-    Left = 32
-    Top = 248
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton6'
-    TabOrder = 11
-  end
-  object RadioButton7: TRadioButton
-    Tag = 3
-    Left = 32
-    Top = 329
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton7'
-    TabOrder = 12
-  end
-  object RadioButton8: TRadioButton
-    Tag = 3
-    Left = 32
-    Top = 352
-    Width = 113
-    Height = 17
-    Caption = 'RadioButton8'
-    TabOrder = 13
   end
 end

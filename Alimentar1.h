@@ -21,16 +21,9 @@ __published:	// IDE-managed Components
 	TRadioGroup *RadioGroup1;
 	TRadioGroup *RadioGroup2;
 	TRadioGroup *RadioGroup3;
-	TRadioButton *RadioButton1;
-	TRadioButton *RadioButton2;
-	TRadioButton *RadioButton3;
-	TRadioButton *RadioButton4;
-	TRadioButton *RadioButton5;
-	TRadioButton *RadioButton6;
-	TRadioButton *RadioButton7;
-	TRadioButton *RadioButton8;
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall PreviousClick(TObject *Sender);
+    void __fastcall NextClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TAlimentarForm1(TComponent* Owner);
