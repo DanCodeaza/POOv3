@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{0E1E626D-460A-479E-BAB5-453758BFD1B0}</ProjectGuid>
+        <ProjectGuid>{0BEE2C93-7DE4-42F1-A323-28311CB0AF14}</ProjectGuid>
         <ProjectVersion>19.5</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
         <AppType>Application</AppType>
@@ -64,8 +64,8 @@
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
-        <IncludePath>POO3\;$(IncludePath)</IncludePath>
-        <ILINK_LibraryPath>POO3\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>POO2\;$(IncludePath)</IncludePath>
+        <ILINK_LibraryPath>POO2\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <SanitizedProjectName>Project1</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
@@ -121,6 +121,18 @@
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
     </PropertyGroup>
     <ItemGroup>
+        <CppCompile Include="Alimentar1.cpp">
+            <Form>AlimentarForm1</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Alimentar1.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Menu.cpp">
+            <Form>MenuForm</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Menu.h</DependentOn>
+            <BuildOrder>2</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
@@ -128,13 +140,15 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="Unit1.cpp">
-            <Form>Form2</Form>
+        <CppCompile Include="TellMeMore.cpp">
+            <Form>TellMeMoreForm</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit1.h</DependentOn>
-            <BuildOrder>2</BuildOrder>
+            <DependentOn>TellMeMore.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
         </CppCompile>
-        <FormResources Include="Unit1.dfm"/>
+        <FormResources Include="TellMeMore.dfm"/>
+        <FormResources Include="Menu.dfm"/>
+        <FormResources Include="Alimentar1.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
