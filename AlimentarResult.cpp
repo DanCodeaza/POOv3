@@ -12,6 +12,8 @@ TAlimentarFormResult *AlimentarFormResult;
 __fastcall TAlimentarFormResult::TAlimentarFormResult(TComponent* Owner)
 	: TForm(Owner)
 {
+    BorderStyle = bsNone;
+    WindowState = TWindowState::wsMaximized;
 }
 //---------------------------------------------------------------------------
 

@@ -13,9 +13,9 @@ TTellMeMoreForm *TellMeMoreForm;
 __fastcall TTellMeMoreForm::TTellMeMoreForm(TComponent* Owner)
 	: TForm(Owner)
 {
-	TellMeMoreForm->BorderStyle=bsNone;
-	TellMeMoreForm->WindowState=wsMaximized;
-    Label1->Font->Size=12;
+    BorderStyle = bsNone;
+    WindowState = TWindowState::wsMaximized;
+	Label1->Font->Size=12;
 }
 //---------------------------------------------------------------------------
 void __fastcall TTellMeMoreForm::ExitClick(TObject *Sender)
@@ -26,7 +26,11 @@ void __fastcall TTellMeMoreForm::ExitClick(TObject *Sender)
 void __fastcall TTellMeMoreForm::PreviousClick(TObject *Sender)
 {
 	TMenuForm* newForm = new TMenuForm(NULL);
+	newForm->WindowState = TWindowState::wsMaximized;
+	newForm->BorderStyle = bsNone;
+	newForm->Position = poDefault;
 	newForm -> Show();
-	this->Close();
+	this->Hide();
 }
+
 

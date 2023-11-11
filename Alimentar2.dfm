@@ -37,7 +37,7 @@ object AlimentarForm2: TAlimentarForm2
     Top = 400
     Width = 75
     Height = 25
-    Caption = 'Previous'
+    Caption = 'Back'
     TabOrder = 0
     OnClick = PreviousClick
   end

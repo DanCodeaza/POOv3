@@ -48,7 +48,7 @@ object TellMeMoreForm: TTellMeMoreForm
     Top = 392
     Width = 75
     Height = 25
-    Caption = 'Previous'
+    Caption = 'Back'
     TabOrder = 1
     OnClick = PreviousClick
   end

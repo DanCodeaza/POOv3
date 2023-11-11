@@ -14,6 +14,8 @@ TAlimentarForm3 *AlimentarForm3;
 __fastcall TAlimentarForm3::TAlimentarForm3(TComponent* Owner)
 	: TForm(Owner)
 {
+    BorderStyle = bsNone;
+    WindowState = TWindowState::wsMaximized;
 }
 //---------------------------------------------------------------------------
 void __fastcall TAlimentarForm3::PreviousClick(TObject *Sender)

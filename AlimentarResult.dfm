@@ -35,17 +35,17 @@ object AlimentarFormResult: TAlimentarFormResult
   object Button1: TButton
     Left = 56
     Top = 256
-    Width = 185
+    Width = 225
     Height = 41
-    Caption = 'Button1'
+    Caption = 'Calculate your individual footprint'
     TabOrder = 0
   end
   object Button2: TButton
     Left = 56
     Top = 312
-    Width = 185
+    Width = 225
     Height = 41
-    Caption = 'Button2'
+    Caption = 'Calculate your house footprint'
     TabOrder = 1
   end
   object Exit: TButton
