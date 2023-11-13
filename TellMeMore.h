@@ -16,6 +16,7 @@ __published:	// IDE-managed Components
 	TButton *Previous;
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall PreviousClick(TObject *Sender);
+	void __fastcall FormResize(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TTellMeMoreForm(TComponent* Owner);

@@ -34,3 +34,15 @@ void __fastcall TTellMeMoreForm::PreviousClick(TObject *Sender)
 }
 
 
+void __fastcall TTellMeMoreForm::FormResize(TObject *Sender)
+{
+	Exit->Top = 1000;
+	Exit->Left = 1750;
+	Previous->Top=1000;
+	Previous->Left = 1650;
+	Label1->Top = 100;
+	Label1->Left = 50;
+    Label1->Width = ClientWidth-100;
+}
+//---------------------------------------------------------------------------
+

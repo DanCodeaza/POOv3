@@ -2,7 +2,7 @@ object AlimentarForm2: TAlimentarForm2
   Left = 0
   Top = 0
   Caption = 'AlimentarForm2'
-  ClientHeight = 433
+  ClientHeight = 545
   ClientWidth = 622
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -10,6 +10,7 @@ object AlimentarForm2: TAlimentarForm2
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnResize = FormResize
   TextHeight = 15
   object Label1: TLabel
     Left = 48
@@ -28,9 +29,16 @@ object AlimentarForm2: TAlimentarForm2
   object Label3: TLabel
     Left = 48
     Top = 296
-    Width = 34
+    Width = 204
     Height = 15
-    Caption = 'Label3'
+    Caption = 'Do you frequently consume fast-food?'
+  end
+  object Label4: TLabel
+    Left = 41
+    Top = 428
+    Width = 188
+    Height = 15
+    Caption = 'Do you consume organic products?'
   end
   object Previous: TButton
     Left = 375
@@ -85,6 +93,21 @@ object AlimentarForm2: TAlimentarForm2
     Top = 317
     Width = 248
     Height = 105
+    Items.Strings = (
+      'Yes, frequently'
+      'Occasionally'
+      'No, never')
     TabOrder = 5
+  end
+  object RadioGroup4: TRadioGroup
+    Left = 41
+    Top = 449
+    Width = 185
+    Height = 105
+    Items.Strings = (
+      'Yes, exclusively'
+      'Yes, sometimes'
+      'No, never')
+    TabOrder = 6
   end
 end

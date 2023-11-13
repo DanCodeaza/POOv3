@@ -10,6 +10,7 @@ object TellMeMoreForm: TTellMeMoreForm
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnResize = FormResize
   TextHeight = 15
   object Label1: TLabel
     Left = 56

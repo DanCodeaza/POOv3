@@ -23,3 +23,12 @@ void __fastcall TAlimentarFormResult::ExitClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TAlimentarFormResult::FormResize(TObject *Sender)
+{
+	Exit->Top = 1000;
+	Exit->Left = 1750;
+}
+//---------------------------------------------------------------------------
+
+
+

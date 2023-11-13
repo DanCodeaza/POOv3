@@ -2,7 +2,7 @@ object AlimentarForm1: TAlimentarForm1
   Left = 0
   Top = 0
   Caption = 'AlimentarForm1'
-  ClientHeight = 442
+  ClientHeight = 567
   ClientWidth = 628
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -10,6 +10,7 @@ object AlimentarForm1: TAlimentarForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnResize = FormResize
   TextHeight = 15
   object Label1: TLabel
     Left = 32
@@ -30,9 +31,16 @@ object AlimentarForm1: TAlimentarForm1
   object Label3: TLabel
     Left = 32
     Top = 283
-    Width = 267
+    Width = 249
     Height = 15
-    Caption = 'Label3How processed are the foods you consume?'
+    Caption = 'How processed are the foods you consume?'
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 419
+    Width = 271
+    Height = 15
+    Caption = 'Do you choose to buy in bulk to reduce packaging?'
   end
   object Previous: TButton
     Left = 368
@@ -95,5 +103,16 @@ object AlimentarForm1: TAlimentarForm1
       'The food is largely processed.'
       'I only consume processed foods.')
     TabOrder = 5
+  end
+  object RadioGroup4: TRadioGroup
+    Left = 32
+    Top = 440
+    Width = 185
+    Height = 105
+    Items.Strings = (
+      'Always'
+      'Sometimes'
+      'Rarely or never')
+    TabOrder = 6
   end
 end
