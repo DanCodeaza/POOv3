@@ -110,4 +110,30 @@ object AlimentarForm2: TAlimentarForm2
       'No, never')
     TabOrder = 6
   end
+  object Button1: TButton
+    Left = 424
+    Top = 464
+    Width = 25
+    Height = 25
+    Caption = '1'
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 376
+    Top = 488
+    Width = 25
+    Height = 25
+    Caption = '2'
+    TabOrder = 8
+  end
+  object Button3: TButton
+    Left = 544
+    Top = 504
+    Width = 25
+    Height = 25
+    Caption = '3'
+    TabOrder = 9
+    OnClick = Button3Click
+  end
 end

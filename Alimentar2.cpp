@@ -14,14 +14,14 @@ TAlimentarForm2 *AlimentarForm2;
 __fastcall TAlimentarForm2::TAlimentarForm2(TComponent* Owner)
 	: TForm(Owner)
 {
-    BorderStyle = bsNone;
-    WindowState = TWindowState::wsMaximized;
+	BorderStyle = bsNone;
+	WindowState = TWindowState::wsMaximized;
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TAlimentarForm2::ExitClick(TObject *Sender)
 {
-    Application->Terminate();
+	Application->Terminate();
 }
 //---------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ void __fastcall TAlimentarForm2::NextClick(TObject *Sender)
 {
 	TAlimentarForm3* newForm = new TAlimentarForm3(NULL);
 	newForm -> Show();
-    this->Hide();
+	this->Hide();
 }
 //---------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ void __fastcall TAlimentarForm2::PreviousClick(TObject *Sender)
 {
 	TAlimentarForm1* newForm1 = new TAlimentarForm1(NULL);
 	newForm1 -> Show();
-    this->Hide();
+	this->Hide();
 }
 //---------------------------------------------------------------------------
 
@@ -46,9 +46,15 @@ void __fastcall TAlimentarForm2::FormResize(TObject *Sender)
 	Exit->Top = 1000;
 	Exit->Left = 1750;
 	Next->Top = 1000;
-	Next -> Left = 1650;
+	Next -> Left = 1000;
 	Previous->Top=1000;
-	Previous->Left=1550;
+	Previous->Left=785;
+	Button1->Top = 1000;
+	Button1->Left = 890;
+	Button2->Top = 1000;
+	Button2->Left = 925;
+	Button3->Top = 1000;
+	Button3->Left = 960;
 
 	Label1->Left = 100;
 	Label1->Top = 100;
@@ -70,4 +76,23 @@ void __fastcall TAlimentarForm2::FormResize(TObject *Sender)
 
 }
 //---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+
+void __fastcall TAlimentarForm2::Button1Click(TObject *Sender)
+{
+	TAlimentarForm1* newForm1 = new TAlimentarForm1(NULL);
+	newForm1 -> Show();
+	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TAlimentarForm2::Button3Click(TObject *Sender)
+{
+	TAlimentarForm3* newForm = new TAlimentarForm3(NULL);
+	newForm -> Show();
+	this->Hide();
+}
+//---------------------------------------------------------------------------
+
 

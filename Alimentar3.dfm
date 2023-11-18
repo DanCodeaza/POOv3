@@ -111,4 +111,30 @@ object AlimentarForm3: TAlimentarForm3
       'First option!')
     TabOrder = 6
   end
+  object Button1: TButton
+    Left = 280
+    Top = 549
+    Width = 25
+    Height = 25
+    Caption = '1'
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 311
+    Top = 549
+    Width = 25
+    Height = 25
+    Caption = '2'
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 342
+    Top = 549
+    Width = 25
+    Height = 25
+    Caption = '3'
+    TabOrder = 9
+  end
 end

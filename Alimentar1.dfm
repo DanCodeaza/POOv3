@@ -2,8 +2,8 @@ object AlimentarForm1: TAlimentarForm1
   Left = 0
   Top = 0
   Caption = 'AlimentarForm1'
-  ClientHeight = 567
-  ClientWidth = 628
+  ClientHeight = 558
+  ClientWidth = 622
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -31,7 +31,7 @@ object AlimentarForm1: TAlimentarForm1
   object Label3: TLabel
     Left = 32
     Top = 283
-    Width = 249
+    Width = 233
     Height = 15
     Caption = 'How processed are the foods you consume?'
   end
@@ -114,5 +114,31 @@ object AlimentarForm1: TAlimentarForm1
       'Sometimes'
       'Rarely or never')
     TabOrder = 6
+  end
+  object Button1: TButton
+    Left = 304
+    Top = 488
+    Width = 25
+    Height = 25
+    Caption = '1'
+    TabOrder = 7
+  end
+  object Button2: TButton
+    Left = 384
+    Top = 488
+    Width = 25
+    Height = 25
+    Caption = '2'
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 472
+    Top = 488
+    Width = 25
+    Height = 25
+    Caption = '3'
+    TabOrder = 9
+    OnClick = Button3Click
   end
 end
