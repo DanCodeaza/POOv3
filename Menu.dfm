@@ -16,8 +16,8 @@ object MenuForm: TMenuForm
   object Label1: TLabel
     Left = 0
     Top = 32
-    Width = 1859
-    Height = 90
+    Width = 1851
+    Height = 15
     Caption = 
       'Carbon dioxide (CO2) stands as a critical component in the Earth' +
       #39's atmosphere, wielding a powerful influence on the delicate bal' +
@@ -3094,7 +3094,7 @@ object MenuForm: TMenuForm
     Top = 224
     Width = 201
     Height = 25
-    Caption = 'Calculate your feed footprint'
+    Caption = 'Calculate your food footprint'
     TabOrder = 2
     OnClick = ACAlimentarClick
   end

@@ -36,14 +36,14 @@ object AlimentarFormResult: TAlimentarFormResult
   object Label4: TLabel
     Left = 232
     Top = 56
-    Width = 33
+    Width = 6
     Height = 15
     Caption = 'x'
   end
   object Label5: TLabel
     Left = 190
     Top = 88
-    Width = 23
+    Width = 6
     Height = 15
     Caption = 'x'
   end
@@ -103,5 +103,14 @@ object AlimentarFormResult: TAlimentarFormResult
     Lines.Strings = (
       'Feedback')
     TabOrder = 4
+  end
+  object Menu: TButton
+    Left = 648
+    Top = 192
+    Width = 85
+    Height = 25
+    Caption = 'Back to menu'
+    TabOrder = 5
+    OnClick = MenuClick
   end
 end
