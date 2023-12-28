@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <fstream>
 #pragma hdrstop
 
 #include "Alimentar1.h"
@@ -33,6 +34,18 @@ void __fastcall TAlimentarForm1::PreviousClick(TObject *Sender)
 //---------------------------------------------------------------------------
  void __fastcall TAlimentarForm1::NextClick(TObject *Sender)
 {
+	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+	outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
+   
 	TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
 	newForm1->Show();
 	this->Hide();
@@ -78,6 +91,17 @@ void __fastcall TAlimentarForm1::FormResize(TObject *Sender)
 
 void __fastcall TAlimentarForm1::Button2Click(TObject *Sender)
 {
+	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
 	TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
 	newForm1->Show();
 	this->Hide();
@@ -86,6 +110,17 @@ void __fastcall TAlimentarForm1::Button2Click(TObject *Sender)
 
 void __fastcall TAlimentarForm1::Button3Click(TObject *Sender)
 {
+	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
 	TAlimentarForm3 *newForm1= new TAlimentarForm3(NULL);
 	newForm1->Show();
 	this->Hide();

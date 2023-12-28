@@ -2,8 +2,8 @@ object AlimentarFormResult: TAlimentarFormResult
   Left = 0
   Top = 0
   Caption = 'AlimentarFormResult'
-  ClientHeight = 753
-  ClientWidth = 1050
+  ClientHeight = 744
+  ClientWidth = 1044
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -29,9 +29,9 @@ object AlimentarFormResult: TAlimentarFormResult
   object Label3: TLabel
     Left = 208
     Top = 88
-    Width = 157
+    Width = 167
     Height = 15
-    Caption = ' of the most polluting people.'
+    Caption = '% of the most polluting people.'
   end
   object Label4: TLabel
     Left = 232
@@ -50,18 +50,23 @@ object AlimentarFormResult: TAlimentarFormResult
   object Label6: TLabel
     Left = 64
     Top = 443
-    Width = 119
+    Width = 94
     Height = 15
-    Caption = 'Give us your feedback:'
+    Caption = 'Give us Feedback:'
   end
   object Label7: TLabel
     Left = 56
     Top = 160
-    Width = 404
+    Width = 3
     Height = 15
-    Caption = 
-      'Here are a few tips that can help you become more environmentall' +
-      'y friendly:'
+    WordWrap = True
+  end
+  object Label8: TLabel
+    Left = 287
+    Top = 56
+    Width = 53
+    Height = 15
+    Caption = 'kg of CO2'
   end
   object Button1: TButton
     Left = 56

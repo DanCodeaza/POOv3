@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <fstream>
 #pragma hdrstop
 
 #include "Menu.h"
@@ -36,6 +37,42 @@ void __fastcall TMenuForm::TellMeMoreClick(TObject *Sender)
 
 void __fastcall TMenuForm::ACAlimentarClick(TObject *Sender)
 {
+     const char* filename = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+
+    std::ofstream file(filename, std::ofstream::trunc);
+
+    if (file.is_open())
+	{
+        file.close();
+    }
+    else
+    {
+        ShowMessage("Unable to open the file.");
+	}
+	 const char* filename2 = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2";
+
+	std::ofstream file2(filename2, std::ofstream::trunc);
+
+	if (file2.is_open())
+	{
+		file2.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	 const char* filename3 = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3";
+
+	std::ofstream file3(filename3, std::ofstream::trunc);
+
+	if (file3.is_open())
+	{
+        file3.close();
+    }
+    else
+    {
+        ShowMessage("Unable to open the file.");
+	}
 	TAlimentarForm1 *newForm1 = new TAlimentarForm1(NULL);
 	newForm1->Show();
     this->Hide();

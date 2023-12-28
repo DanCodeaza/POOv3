@@ -25,11 +25,13 @@ __published:	// IDE-managed Components
 	TLabel *Label4;
 	TLabel *Label5;
 	TLabel *Label6;
-	TLabel *Label7;
 	TButton *Menu;
+	TLabel *Label7;
+	TLabel *Label8;
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall MenuClick(TObject *Sender);
+    void __fastcall ReadAndDisplayFileContent();
 private:	// User declarations
 public:		// User declarations
 	__fastcall TAlimentarFormResult(TComponent* Owner);

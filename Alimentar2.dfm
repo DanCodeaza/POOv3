@@ -2,8 +2,8 @@ object AlimentarForm2: TAlimentarForm2
   Left = 0
   Top = 0
   Caption = 'AlimentarForm2'
-  ClientHeight = 545
-  ClientWidth = 622
+  ClientHeight = 527
+  ClientWidth = 610
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
