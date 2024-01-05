@@ -145,6 +145,30 @@
             <DependentOn>AlimentarResult.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Individual1.cpp">
+            <Form>IndividualForm1</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Individual1.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Individual2.cpp">
+            <Form>IndividualForm2</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Individual2.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Individual3.cpp">
+            <Form>IndividualForm3</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Individual3.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="IndividualResult.cpp">
+            <Form>IndividualFormResult</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>IndividualResult.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Menu.cpp">
             <Form>MenuForm</Form>
             <FormType>dfm</FormType>
@@ -170,6 +194,10 @@
         <FormResources Include="Alimentar2.dfm"/>
         <FormResources Include="Alimentar3.dfm"/>
         <FormResources Include="AlimentarResult.dfm"/>
+        <FormResources Include="Individual1.dfm"/>
+        <FormResources Include="Individual2.dfm"/>
+        <FormResources Include="Individual3.dfm"/>
+        <FormResources Include="IndividualResult.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

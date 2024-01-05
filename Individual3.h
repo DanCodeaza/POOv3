@@ -1,35 +1,34 @@
 //---------------------------------------------------------------------------
 
-#ifndef MenuH
-#define MenuH
+#ifndef Individual3H
+#define Individual3H
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
-#include <Vcl.Imaging.pngimage.hpp>
 //---------------------------------------------------------------------------
-class TMenuForm : public TForm
+class TIndividualForm3 : public TForm
 {
 __published:	// IDE-managed Components
-	TLabel *Label1;
-	TButton *ACIndividual;
-	TButton *ACHouse;
-	TButton *ACAlimentar;
-	TButton *TellMeMore;
+	TButton *Next;
+	TButton *Previous;
 	TButton *Exit;
-	TImage *Image1;
+	TButton *Button1;
+	TButton *Button2;
+	TButton *Button3;
+	void __fastcall PreviousClick(TObject *Sender);
 	void __fastcall ExitClick(TObject *Sender);
-	void __fastcall TellMeMoreClick(TObject *Sender);
-	void __fastcall ACAlimentarClick(TObject *Sender);
+	void __fastcall NextClick(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
-	void __fastcall ACIndividualClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TMenuForm(TComponent* Owner);
+	__fastcall TIndividualForm3(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TMenuForm *MenuForm;
+extern PACKAGE TIndividualForm3 *IndividualForm3;
 //---------------------------------------------------------------------------
 #endif

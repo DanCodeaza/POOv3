@@ -120,16 +120,16 @@ object AlimentarForm2: TAlimentarForm2
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 376
-    Top = 488
+    Left = 472
+    Top = 464
     Width = 25
     Height = 25
     Caption = '2'
     TabOrder = 8
   end
   object Button3: TButton
-    Left = 544
-    Top = 504
+    Left = 520
+    Top = 464
     Width = 25
     Height = 25
     Caption = '3'
