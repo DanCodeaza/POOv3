@@ -37,7 +37,7 @@ void __fastcall TMenuForm::TellMeMoreClick(TObject *Sender)
 
 void __fastcall TMenuForm::ACAlimentarClick(TObject *Sender)
 {
-     const char* filename = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	 const char* filename = "answer";
 
     std::ofstream file(filename, std::ofstream::trunc);
 
@@ -49,7 +49,7 @@ void __fastcall TMenuForm::ACAlimentarClick(TObject *Sender)
     {
         ShowMessage("Unable to open the file.");
 	}
-	 const char* filename2 = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2";
+	 const char* filename2 = "answer2";
 
 	std::ofstream file2(filename2, std::ofstream::trunc);
 
@@ -61,17 +61,17 @@ void __fastcall TMenuForm::ACAlimentarClick(TObject *Sender)
 	{
 		ShowMessage("Unable to open the file.");
 	}
-	 const char* filename3 = "C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3";
+	 const char* filename3 = "answer3";
 
 	std::ofstream file3(filename3, std::ofstream::trunc);
 
 	if (file3.is_open())
 	{
-        file3.close();
+		file3.close();
     }
-    else
-    {
-        ShowMessage("Unable to open the file.");
+	else
+	{
+		ShowMessage("Unable to open the file.");
 	}
 	TAlimentarForm1 *newForm1 = new TAlimentarForm1(NULL);
 	newForm1->Show();
