@@ -26,6 +26,15 @@ void __fastcall TIndividualForm2::ExitClick(TObject *Sender)
 
 void __fastcall TIndividualForm2::NextClick(TObject *Sender)
 {
+   	const char* filePath="answer2";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
 	TIndividualForm3* newForm = new TIndividualForm3(NULL);
 	newForm -> Show();
 	this->Hide();
@@ -42,6 +51,15 @@ void __fastcall TIndividualForm2::PreviousClick(TObject *Sender)
 
 void __fastcall TIndividualForm2::Button1Click(TObject *Sender)
 {
+    	const char* filePath="answer2";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
 	TIndividualForm1* newForm1 = new TIndividualForm1(NULL);
 	newForm1 -> Show();
 	this->Hide();
@@ -50,6 +68,15 @@ void __fastcall TIndividualForm2::Button1Click(TObject *Sender)
 
 void __fastcall TIndividualForm2::Button3Click(TObject *Sender)
 {
+	const char* filePath="answer2";
+	std::ofstream outputFile(filePath);
+      if (!outputFile.is_open()) {
+        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+        return;
+	}
+    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
 	TIndividualForm3* newForm = new TIndividualForm3(NULL);
 	newForm -> Show();
 	this->Hide();
@@ -69,4 +96,11 @@ void __fastcall TIndividualForm2::Button3Click(TObject *Sender)
 	Button2->Left = 925;
 	Button3->Top = 1000;
 	Button3->Left = 960;
+
+    RadioGroup1->Left=100;
+	RadioGroup1->Top=150;
+	RadioGroup2->Left=100;
+	RadioGroup2->Top=375;
+	RadioGroup3->Left=100;
+	RadioGroup3->Top=600;
 }
