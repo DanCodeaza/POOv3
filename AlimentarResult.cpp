@@ -5,6 +5,7 @@
 #include "Menu.h"
 #include "AlimentarResult.h"
 #include "Alimentar1.h"
+#include "Individual1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -203,6 +204,14 @@ void __fastcall TAlimentarFormResult::MenuClick(TObject *Sender)
 {
 	TMenuForm *newForm= new TMenuForm(NULL);
 	newForm -> Show();
+	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TAlimentarFormResult::Button1Click(TObject *Sender)
+{
+	TIndividualForm1 *newForm1 = new TIndividualForm1(NULL);
+	newForm1->Show();
 	this->Hide();
 }
 //---------------------------------------------------------------------------
