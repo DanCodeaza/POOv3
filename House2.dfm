@@ -2,8 +2,8 @@ object HouseForm2: THouseForm2
   Left = 0
   Top = 0
   Caption = 'HouseForm2'
-  ClientHeight = 683
-  ClientWidth = 1085
+  ClientHeight = 674
+  ClientWidth = 1079
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

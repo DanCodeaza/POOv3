@@ -105,7 +105,7 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	for(i=4;i<8;i++)
 		if(v[i]<0)
 			ok2=0;
-	for(i=8;i<10;i++)
+	for(i=8;i<12;i++)
 		if(v[i]<0)
 			ok3=0;
 	if(ok1==0)

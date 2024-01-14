@@ -6,6 +6,7 @@
 #include "AlimentarResult.h"
 #include "Alimentar1.h"
 #include "Individual1.h"
+#include "House1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -210,9 +211,98 @@ void __fastcall TAlimentarFormResult::MenuClick(TObject *Sender)
 
 void __fastcall TAlimentarFormResult::Button1Click(TObject *Sender)
 {
+const char* filename = "answer";
+
+    std::ofstream file(filename, std::ofstream::trunc);
+
+    if (file.is_open())
+	{
+        file.close();
+	}
+    else
+	{
+        ShowMessage("Unable to open the file.");
+	}
+	 const char* filename2 = "answer2";
+
+	std::ofstream file2(filename2, std::ofstream::trunc);
+
+	if (file2.is_open())
+	{
+		file2.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	 const char* filename3 = "answer3";
+
+	std::ofstream file3(filename3, std::ofstream::trunc);
+
+	if (file3.is_open())
+	{
+		file3.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
 	TIndividualForm1 *newForm1 = new TIndividualForm1(NULL);
 	newForm1->Show();
 	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TAlimentarFormResult::Button2Click(TObject *Sender)
+{
+       const char* filename = "answer";
+
+    std::ofstream file(filename, std::ofstream::trunc);
+
+    if (file.is_open())
+	{
+        file.close();
+	}
+    else
+	{
+        ShowMessage("Unable to open the file.");
+	}
+	 const char* filename2 = "answer2";
+
+	std::ofstream file2(filename2, std::ofstream::trunc);
+
+	if (file2.is_open())
+	{
+		file2.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	 const char* filename3 = "answer3";
+
+	std::ofstream file3(filename3, std::ofstream::trunc);
+
+	if (file3.is_open())
+	{
+		file3.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	THouseForm1 *newForm1 = new THouseForm1(NULL);
+	newForm1->Show();
+	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TAlimentarFormResult::Button3Click(TObject *Sender)
+{
+	TStringList *sl = new TStringList();
+	sl->Assign(Feedback->Lines);
+	sl->SaveToFile("Feedback", TEncoding::UTF8);
+	delete sl;
 }
 //---------------------------------------------------------------------------
 

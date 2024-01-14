@@ -90,7 +90,7 @@ object IndividualFormResult: TIndividualFormResult
   object FeedBack: TMemo
     Left = 40
     Top = 568
-    Width = 833
+    Width = 705
     Height = 265
     Lines.Strings = (
       'FeedBack')
@@ -119,5 +119,15 @@ object IndividualFormResult: TIndividualFormResult
     Height = 41
     Caption = 'Calculate your house footprint'
     TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 760
+    Top = 808
+    Width = 75
+    Height = 25
+    Caption = 'Submit'
+    TabOrder = 6
+    OnClick = Button3Click
   end
 end

@@ -1,5 +1,7 @@
 //---------------------------------------------------------------------------
-
+    #include <System.Classes.hpp>
+#include <System.SysUtils.hpp>
+#include <System.IOUtils.hpp>
 #include <vcl.h>
 #include<fstream>
 #pragma hdrstop
@@ -8,6 +10,7 @@
 #include "Individual1.h"
 #include "Menu.h"
 #include "Alimentar1.h"
+#include "House1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -363,6 +366,60 @@ const char* filename = "answer";
 	TAlimentarForm1 *newForm1 = new TAlimentarForm1(NULL);
 	newForm1->Show();
 	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TIndividualFormResult::Button2Click(TObject *Sender)
+{
+   const char* filename = "answer";
+
+    std::ofstream file(filename, std::ofstream::trunc);
+
+    if (file.is_open())
+	{
+        file.close();
+	}
+    else
+	{
+        ShowMessage("Unable to open the file.");
+	}
+	 const char* filename2 = "answer2";
+
+	std::ofstream file2(filename2, std::ofstream::trunc);
+
+	if (file2.is_open())
+	{
+		file2.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	 const char* filename3 = "answer3";
+
+	std::ofstream file3(filename3, std::ofstream::trunc);
+
+	if (file3.is_open())
+	{
+		file3.close();
+	}
+	else
+	{
+		ShowMessage("Unable to open the file.");
+	}
+	THouseForm1 *newForm1 = new THouseForm1(NULL);
+	newForm1->Show();
+	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TIndividualFormResult::Button3Click(TObject *Sender)
+{
+	TStringList *sl = new TStringList();
+	sl->Assign(FeedBack->Lines);
+	sl->SaveToFile("Feedback", TEncoding::UTF8);
+	delete sl;
 }
 //---------------------------------------------------------------------------
 

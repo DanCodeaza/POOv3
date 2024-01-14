@@ -83,6 +83,7 @@ object AlimentarFormResult: TAlimentarFormResult
     Height = 41
     Caption = 'Calculate your house footprint'
     TabOrder = 1
+    OnClick = Button2Click
   end
   object Exit: TButton
     Left = 824
@@ -117,5 +118,14 @@ object AlimentarFormResult: TAlimentarFormResult
     Caption = 'Back to menu'
     TabOrder = 5
     OnClick = MenuClick
+  end
+  object Button3: TButton
+    Left = 631
+    Top = 672
+    Width = 75
+    Height = 25
+    Caption = 'Submit'
+    TabOrder = 6
+    OnClick = Button3Click
   end
 end

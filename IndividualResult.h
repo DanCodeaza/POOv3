@@ -28,12 +28,15 @@ __published:	// IDE-managed Components
 	TProgressBar *ProgressBar1;
 	TButton *Button1;
 	TButton *Button2;
+	TButton *Button3;
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall MenuClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall ReadAndDisplayFileContent();
 	void __fastcall FormActivate(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
+	void __fastcall Button3Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TIndividualFormResult(TComponent* Owner);

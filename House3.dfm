@@ -19,6 +19,7 @@ object HouseForm3: THouseForm3
     Height = 25
     Caption = 'Next'
     TabOrder = 0
+    OnClick = NextClick
   end
   object Previous: TButton
     Left = 784

@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include<fstream>
 #pragma hdrstop
 #include "Menu.h"
 #include "House1.h"
@@ -32,6 +33,18 @@ void __fastcall THouseForm1::PreviousClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall THouseForm1::NextClick(TObject *Sender)
 {
+const char* filePath="answer";
+	std::ofstream outputFile(filePath);
+	  if (!outputFile.is_open()) {
+		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+		return;
+	}
+	outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
+
 	THouseForm2 *newForm1= new THouseForm2(NULL);
 	newForm1->Show();
 	this->Hide();
@@ -39,6 +52,18 @@ void __fastcall THouseForm1::NextClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall THouseForm1::Button2Click(TObject *Sender)
 {
+    const char* filePath="answer";
+	std::ofstream outputFile(filePath);
+	  if (!outputFile.is_open()) {
+		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+		return;
+	}
+	outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
+
 	THouseForm2 *newForm1= new THouseForm2(NULL);
 	newForm1->Show();
 	this->Hide();
@@ -47,6 +72,18 @@ void __fastcall THouseForm1::Button2Click(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall THouseForm1::Button3Click(TObject *Sender)
 {
+const char* filePath="answer";
+	std::ofstream outputFile(filePath);
+	  if (!outputFile.is_open()) {
+		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+		return;
+	}
+	outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup2->ItemIndex << std::endl;
+	outputFile << RadioGroup3->ItemIndex << std::endl;
+	outputFile << RadioGroup4->ItemIndex << std::endl;
+	outputFile.close();
+
 	THouseForm3 *newForm1= new THouseForm3(NULL);
 	newForm1->Show();
 	this->Hide();
