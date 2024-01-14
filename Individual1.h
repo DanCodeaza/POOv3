@@ -18,9 +18,6 @@ __published:	// IDE-managed Components
 	TButton *Button1;
 	TButton *Button2;
 	TButton *Button3;
-	TRadioGroup *RadioGroup1;
-	TRadioGroup *RadioGroup2;
-	TRadioGroup *RadioGroup4;
 	void __fastcall PreviousClick(TObject *Sender);
 	void __fastcall NextClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);

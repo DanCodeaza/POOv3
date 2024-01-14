@@ -10,7 +10,6 @@ object IndividualFormResult: TIndividualFormResult
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnResize = FormResize
   TextHeight = 15
   object Exit: TButton
     Left = 520

@@ -71,11 +71,4 @@ void __fastcall TIndividualForm3::FormResize(TObject *Sender)
 	Button2->Left = 925;
 	Button3->Top = 1000;
 	Button3->Left = 960;
-
-    RadioGroup1->Left=100;
-	RadioGroup1->Top=150;
-	RadioGroup2->Left=100;
-	RadioGroup2->Top=375;
-	RadioGroup3->Left=100;
-	RadioGroup3->Top=825;
 }
