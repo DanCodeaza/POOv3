@@ -34,11 +34,11 @@ void __fastcall TAlimentarForm1::PreviousClick(TObject *Sender)
 //---------------------------------------------------------------------------
  void __fastcall TAlimentarForm1::NextClick(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	const char* filePath="answer";
 	std::ofstream outputFile(filePath);
-      if (!outputFile.is_open()) {
-        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
-        return;
+	  if (!outputFile.is_open()) {
+		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+		return;
 	}
 	outputFile << RadioGroup1->ItemIndex << std::endl;
 	outputFile << RadioGroup2->ItemIndex << std::endl;
@@ -91,7 +91,7 @@ void __fastcall TAlimentarForm1::FormResize(TObject *Sender)
 
 void __fastcall TAlimentarForm1::Button2Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	const char* filePath="answer";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));
@@ -110,10 +110,10 @@ void __fastcall TAlimentarForm1::Button2Click(TObject *Sender)
 
 void __fastcall TAlimentarForm1::Button3Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer";
+	const char* filePath="answer";
 	std::ofstream outputFile(filePath);
-      if (!outputFile.is_open()) {
-        ShowMessage("Error: Could not open the file " + AnsiString(filePath));
+	  if (!outputFile.is_open()) {
+		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
         return;
 	}
     outputFile << RadioGroup1->ItemIndex << std::endl;
@@ -126,5 +126,4 @@ void __fastcall TAlimentarForm1::Button3Click(TObject *Sender)
 	this->Hide();
 }
 //---------------------------------------------------------------------------
-
 

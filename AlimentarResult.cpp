@@ -14,7 +14,7 @@ TAlimentarFormResult *AlimentarFormResult;
 {
 	int v[13]={0},i=0;
 	// Open a text file for reading
-	std::ifstream inputFile("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer");
+	std::ifstream inputFile("answer");
 
 	// Check if the file is open
 	if (!inputFile.is_open()) {
@@ -32,7 +32,7 @@ TAlimentarFormResult *AlimentarFormResult;
 	// Close the file
 	inputFile.close();
 
-	   std::ifstream inputFile2("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2");
+	   std::ifstream inputFile2("answer2");
 
 	// Check if the file is open
 	if (!inputFile2.is_open()) {
@@ -50,7 +50,7 @@ TAlimentarFormResult *AlimentarFormResult;
 	// Close the file
 	inputFile.close();
 
-	 std::ifstream inputFile3("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3");
+	 std::ifstream inputFile3("answer3");
 
 	// Check if the file is open
 	if (!inputFile3.is_open()) {

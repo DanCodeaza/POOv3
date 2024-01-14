@@ -31,7 +31,7 @@ void __fastcall TAlimentarForm3::PreviousClick(TObject *Sender)
 
 void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3";
+	const char* filePath="answer3";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));
@@ -44,7 +44,7 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	outputFile.close();
     	int v[13]={0},i=0;
 	// Open a text file for reading
-	std::ifstream inputFile("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer");
+	std::ifstream inputFile("answer");
 
 	// Check if the file is open
 	if (!inputFile.is_open()) {
@@ -62,7 +62,7 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	// Close the file
 	inputFile.close();
 
-	   std::ifstream inputFile2("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2");
+	   std::ifstream inputFile2("answer2");
 
 	// Check if the file is open
 	if (!inputFile2.is_open()) {
@@ -80,7 +80,7 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	// Close the file
 	inputFile.close();
 
-	 std::ifstream inputFile3("C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3");
+	 std::ifstream inputFile3("answer3");
 
 	// Check if the file is open
 	if (!inputFile3.is_open()) {
@@ -98,84 +98,100 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 
 	// Close the file
 	inputFile.close();
-	int j,k;
-	j=0;
+	int j,k,j1,j2,j3;
+	j=0,j1=0,j2=0,j3=0;
 
 	if(v[0]==0)
-		j=j+730*4;
+		j1=j1+730*4;
 	else if (v[0]==1)
-		j=j+730*2;
+		j1=j1+730*2;
 	else if(v[0]==2)
-		j=j+730*1;
+		j1=j1+730*1;
 
 		if(v[1]==0)
-		j=j+730*10;
+		j1=j1+730*10;
 	else if (v[1]==1)
-		j=j+730*3;
+		j1=j1+730*3;
 
 		if(v[2]==0)
-		j=j+730*1;
+		j1=j1+730*1;
 	else if (v[2]==1)
-		j=j+730*3;
+		j1=j1+730*3;
 	else if(v[2]==2)
-		j=j+730*8;
+		j1=j1+730*8;
 
 	if(v[3]==0)
-		j=j+730*1;
+		j1=j1+730*1;
 	else if (v[3]==1)
-		j=j+730*2;
+		j1=j1+730*2;
 	else if(v[3]==2)
-		j=j+730*4;
+		j1=j1+730*4;
 
 	if(v[4]==0)
-		j=j+730*10;
+		j2=j2+730*10;
 	else if (v[4]==1)
-		j=j+730*4;
+		j2=j2+730*4;
 	else if(v[4]==2)
-		j=j+730*1;
+		j2=j2+730*1;
 
 	if(v[5]==0)
-		j=j+730*1;
+		j2=j2+730*1;
 	else if (v[5]==1)
-		j=j+730*2;
+		j2=j2+730*2;
 	else if(v[5]==2)
-		j=j+730*3;
+		j2=j2+730*3;
 
 	if(v[6]==0)
-		j=j+730*7;
+		j2=j2+730*7;
 	else if (v[6]==1)
-		j=j+730*3;
+		j2=j2+730*3;
 	else if(v[6]==2)
-		j=j+730*1;
+		j2=j2+730*1;
 
 	if(v[7]==0)
-		j=j+730*1;
+		j2=j2+730*1;
 	else if (v[7]==1)
-		j=j+730*2;
+		j2=j2+730*2;
 	else if(v[7]==2)
-		j=j+730*3;
+		j2=j2+730*3;
 
 
 	if(v[8]==0)
-		j=j+730*1;
+		j3=j3+730*1;
 	else if (v[8]==1)
-		j=j+730*2;
+		j3=j3+730*2;
 	else if(v[8]==2)
-		j=j+730*3;
+		j3=j3+730*3;
 
 	if(v[9]==0)
-		j=j+730*2;
+		j3=j3+730*2;
 	else if (v[9]==1)
-		j=j+730*1;
+		j3=j3+730*1;
 	else if(v[9]==2)
-		j=j+730*1;
+		j3=j3+730*1;
 
-	if(j<18979)
+	ShowMessage(j3);
+	ShowMessage(j2);
+    ShowMessage(j1);
+    j=j1+j2+j3;
+
+	if(j1<4380)
 		{ShowMessage("Uncomplete quiz!Please fill all questions!");
 		TAlimentarForm1 *newForm1= new TAlimentarForm1(NULL);
 		newForm1->Show();
 		this->Hide();
 		 }
+	else if (v[4]==-1 || v[5]==-1 || v[6]==-1 || v[7]==-1) {
+		ShowMessage("Uncomplete quiz!Please fill all questions!");
+		TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
+		newForm1->Show();
+		this->Hide();
+		 }
+	else if(v[8]==-1 || v[9]==-1 || v[10]==-1 || v[11]==-1){
+		ShowMessage("Uncomplete quiz!Please fill all questions!");
+		TAlimentarForm3 *newForm1= new TAlimentarForm3(NULL);
+		newForm1->Show();
+		this->Hide();}
 	else
 	{
 	TAlimentarFormResult* newForm1 = new TAlimentarFormResult(NULL);
@@ -229,7 +245,7 @@ void __fastcall TAlimentarForm3::FormResize(TObject *Sender)
 
 void __fastcall TAlimentarForm3::Button1Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3";
+	const char* filePath="answer3";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));
@@ -248,7 +264,7 @@ void __fastcall TAlimentarForm3::Button1Click(TObject *Sender)
 
 void __fastcall TAlimentarForm3::Button2Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer3";
+	const char* filePath="answer3";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));

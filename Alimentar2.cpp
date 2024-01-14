@@ -28,7 +28,7 @@ void __fastcall TAlimentarForm2::ExitClick(TObject *Sender)
 
 void __fastcall TAlimentarForm2::NextClick(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2";
+	const char* filePath="answer2";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));
@@ -93,7 +93,7 @@ void __fastcall TAlimentarForm2::FormResize(TObject *Sender)
 
 void __fastcall TAlimentarForm2::Button1Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2";
+	const char* filePath="answer2";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));
@@ -112,7 +112,7 @@ void __fastcall TAlimentarForm2::Button1Click(TObject *Sender)
 
 void __fastcall TAlimentarForm2::Button3Click(TObject *Sender)
 {
-	const char* filePath="C:/Users/iontu/OneDrive/Documente/Embarcadero/Studio/Projects/actual/POOv3-main/Alimentar_ans/answer2";
+	const char* filePath="answer2";
 	std::ofstream outputFile(filePath);
       if (!outputFile.is_open()) {
         ShowMessage("Error: Could not open the file " + AnsiString(filePath));

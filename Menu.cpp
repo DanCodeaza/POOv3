@@ -7,7 +7,6 @@
 #include "Menu.h"
 #include "TellMeMore.h"
 #include "Alimentar1.h"
-#include "Individual1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -101,14 +100,6 @@ void __fastcall TMenuForm::FormResize(TObject *Sender)
 	Label1->Left = 50;
 	Image1->Top = 430;
     Image1->Left = 1000;
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TMenuForm::ACIndividualClick(TObject *Sender)
-{
-	TIndividualForm1 *newForm1 = new TIndividualForm1(NULL);
-	newForm1->Show();
-	this->Hide();
 }
 //---------------------------------------------------------------------------
 
