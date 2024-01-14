@@ -25,6 +25,7 @@ __published:	// IDE-managed Components
 	void __fastcall ACAlimentarClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall ACIndividualClick(TObject *Sender);
+	void __fastcall ACHouseClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMenuForm(TComponent* Owner);

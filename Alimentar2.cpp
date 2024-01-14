@@ -68,14 +68,6 @@ void __fastcall TAlimentarForm2::FormResize(TObject *Sender)
 	Button3->Top = 1000;
 	Button3->Left = 960;
 
-	Label1->Left = 100;
-	Label1->Top = 100;
-	Label2->Left = 100;
-	Label2->Top = 325;
-	Label3->Left = 100;
-	Label3->Top = 550;
-	Label4->Left=100;
-	Label4->Top=775;
 
 	RadioGroup1->Left=100;
 	RadioGroup1->Top=150;

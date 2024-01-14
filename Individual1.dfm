@@ -2,14 +2,15 @@ object IndividualForm1: TIndividualForm1
   Left = 0
   Top = 0
   Caption = 'IndividualForm1'
-  ClientHeight = 553
-  ClientWidth = 899
+  ClientHeight = 544
+  ClientWidth = 893
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnResize = FormResize
   TextHeight = 15
   object Next: TButton
     Left = 389

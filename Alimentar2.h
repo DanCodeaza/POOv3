@@ -12,16 +12,12 @@
 class TAlimentarForm2 : public TForm
 {
 __published:	// IDE-managed Components
-	TLabel *Label1;
-	TLabel *Label2;
-	TLabel *Label3;
 	TButton *Previous;
 	TButton *Next;
 	TButton *Exit;
 	TRadioGroup *RadioGroup1;
 	TRadioGroup *RadioGroup2;
 	TRadioGroup *RadioGroup3;
-	TLabel *Label4;
 	TRadioGroup *RadioGroup4;
 	TButton *Button1;
 	TButton *Button2;

@@ -12,36 +12,6 @@ object AlimentarForm1: TAlimentarForm1
   Font.Style = []
   OnResize = FormResize
   TextHeight = 15
-  object Label1: TLabel
-    Left = 32
-    Top = 24
-    Width = 374
-    Height = 15
-    Caption = 
-      'Where do you usually purchase the majority of the food you consu' +
-      'me?'
-  end
-  object Label2: TLabel
-    Left = 32
-    Top = 152
-    Width = 206
-    Height = 15
-    Caption = 'What is your diet mainly composed of?'
-  end
-  object Label3: TLabel
-    Left = 32
-    Top = 283
-    Width = 233
-    Height = 15
-    Caption = 'How processed are the foods you consume?'
-  end
-  object Label4: TLabel
-    Left = 32
-    Top = 419
-    Width = 271
-    Height = 15
-    Caption = 'Do you choose to buy in bulk to reduce packaging?'
-  end
   object Previous: TButton
     Left = 368
     Top = 409
@@ -73,8 +43,11 @@ object AlimentarForm1: TAlimentarForm1
     Tag = 1
     Left = 32
     Top = 41
-    Width = 281
+    Width = 401
     Height = 105
+    Caption = 
+      'Where do you usually purchase the majority of the food you consu' +
+      'me?'
     Items.Strings = (
       'International supermarkets'
       'Stores with products from your native country'
@@ -87,6 +60,7 @@ object AlimentarForm1: TAlimentarForm1
     Top = 172
     Width = 185
     Height = 85
+    Caption = 'What is your diet mainly composed of?'
     Items.Strings = (
       'Meat and animal products'
       'Vegetables and cereals')
@@ -96,8 +70,9 @@ object AlimentarForm1: TAlimentarForm1
     Tag = 3
     Left = 32
     Top = 304
-    Width = 249
+    Width = 313
     Height = 105
+    Caption = 'How processed are the foods you consume?'
     Items.Strings = (
       'The food comes directly from the farm.'
       'The food is largely processed.'
@@ -107,8 +82,9 @@ object AlimentarForm1: TAlimentarForm1
   object RadioGroup4: TRadioGroup
     Left = 32
     Top = 440
-    Width = 185
+    Width = 297
     Height = 105
+    Caption = 'Do you choose to buy in bulk to reduce packaging?'
     Items.Strings = (
       'Always'
       'Sometimes'

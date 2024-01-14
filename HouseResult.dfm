@@ -1,7 +1,7 @@
-object IndividualFormResult: TIndividualFormResult
+object HouseFormResult: THouseFormResult
   Left = 0
   Top = 0
-  Caption = 'IndividualFormResult'
+  Caption = 'HouseFormResult'
   ClientHeight = 442
   ClientWidth = 628
   Color = clBtnFace
@@ -10,11 +10,10 @@ object IndividualFormResult: TIndividualFormResult
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnResize = FormResize
   TextHeight = 15
   object Exit: TButton
-    Left = 520
-    Top = 368
+    Left = 464
+    Top = 336
     Width = 75
     Height = 25
     Caption = 'Exit'
@@ -22,8 +21,8 @@ object IndividualFormResult: TIndividualFormResult
     OnClick = ExitClick
   end
   object Menu: TButton
-    Left = 424
-    Top = 368
+    Left = 383
+    Top = 336
     Width = 75
     Height = 25
     Caption = 'Back to menu'

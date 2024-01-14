@@ -12,36 +12,6 @@ object AlimentarForm3: TAlimentarForm3
   Font.Style = []
   OnResize = FormResize
   TextHeight = 15
-  object Label1: TLabel
-    Left = 41
-    Top = 26
-    Width = 287
-    Height = 15
-    Caption = 'How do you describe your coffee or tea consumption?'
-  end
-  object Label2: TLabel
-    Left = 41
-    Top = 169
-    Width = 341
-    Height = 15
-    Caption = 'How often do you consume local seasonal fruits and vegetables?'
-  end
-  object Label3: TLabel
-    Left = 41
-    Top = 301
-    Width = 427
-    Height = 15
-    Caption = 
-      'Would you be more responsible with the planet and CO2 emission a' +
-      'fter our quiz?'
-  end
-  object Label4: TLabel
-    Left = 348
-    Top = 190
-    Width = 124
-    Height = 15
-    Caption = 'Did you enjoy our quiz?'
-  end
   object Previous: TButton
     Left = 377
     Top = 400
@@ -72,8 +42,9 @@ object AlimentarForm3: TAlimentarForm3
   object RadioGroup1: TRadioGroup
     Left = 41
     Top = 47
-    Width = 224
+    Width = 304
     Height = 105
+    Caption = 'How do you describe your coffee or tea consumption?'
     Items.Strings = (
       'With single-use capsules'
       'I use a reusable filter'
@@ -83,8 +54,9 @@ object AlimentarForm3: TAlimentarForm3
   object RadioGroup2: TRadioGroup
     Left = 41
     Top = 190
-    Width = 224
+    Width = 368
     Height = 105
+    Caption = 'How often do you consume local seasonal fruits and vegetables?'
     Items.Strings = (
       'Always'
       'Sometimes'
@@ -94,10 +66,13 @@ object AlimentarForm3: TAlimentarForm3
   object RadioGroup3: TRadioGroup
     Left = 41
     Top = 329
-    Width = 224
+    Width = 440
     Height = 105
+    Caption = 
+      'Would you be more responsible with the planet and CO2 emission a' +
+      'fter our quiz?'
     Items.Strings = (
-      'Yes!'#11
+      'Yes!'
       'I consider I am already responsible!')
     TabOrder = 5
   end
@@ -106,6 +81,7 @@ object AlimentarForm3: TAlimentarForm3
     Top = 211
     Width = 224
     Height = 105
+    Caption = 'Did you enjoy our quiz?'
     Items.Strings = (
       'Yes!'
       'First option!')

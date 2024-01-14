@@ -45,7 +45,7 @@ void __fastcall TAlimentarForm1::PreviousClick(TObject *Sender)
 	outputFile << RadioGroup3->ItemIndex << std::endl;
 	outputFile << RadioGroup4->ItemIndex << std::endl;
 	outputFile.close();
-   
+
 	TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
 	newForm1->Show();
 	this->Hide();
@@ -66,15 +66,6 @@ void __fastcall TAlimentarForm1::FormResize(TObject *Sender)
 	Button2->Left = 925;
 	Button3->Top = 1000;
 	Button3->Left = 960;
-
-	Label1->Left = 100;
-	Label1->Top = 100;
-	Label2->Left = 100;
-	Label2->Top = 325;
-	Label3->Left = 100;
-	Label3->Top = 550;
-	Label4->Left=100;
-	Label4->Top=775;
 
 	RadioGroup1->Left=100;
 	RadioGroup1->Top=150;
@@ -116,7 +107,7 @@ void __fastcall TAlimentarForm1::Button3Click(TObject *Sender)
 		ShowMessage("Error: Could not open the file " + AnsiString(filePath));
         return;
 	}
-    outputFile << RadioGroup1->ItemIndex << std::endl;
+	outputFile << RadioGroup1->ItemIndex << std::endl;
 	outputFile << RadioGroup2->ItemIndex << std::endl;
 	outputFile << RadioGroup3->ItemIndex << std::endl;
 	outputFile << RadioGroup4->ItemIndex << std::endl;
@@ -126,4 +117,8 @@ void __fastcall TAlimentarForm1::Button3Click(TObject *Sender)
 	this->Hide();
 }
 //---------------------------------------------------------------------------
+
+
+
+
 

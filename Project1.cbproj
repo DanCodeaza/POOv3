@@ -145,6 +145,30 @@
             <DependentOn>AlimentarResult.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
+        <CppCompile Include="House1.cpp">
+            <Form>HouseForm1</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>House1.h</DependentOn>
+            <BuildOrder>12</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="House2.cpp">
+            <Form>HouseForm2</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>House2.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="House3.cpp">
+            <Form>HouseForm3</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>House3.h</DependentOn>
+            <BuildOrder>14</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="HouseResult.cpp">
+            <Form>HouseFormResult</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>HouseResult.h</DependentOn>
+            <BuildOrder>15</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Individual1.cpp">
             <Form>IndividualForm1</Form>
             <FormType>dfm</FormType>
@@ -189,15 +213,19 @@
             <BuildOrder>3</BuildOrder>
         </CppCompile>
         <FormResources Include="Menu.dfm"/>
-        <FormResources Include="TellMeMore.dfm"/>
-        <FormResources Include="Alimentar1.dfm"/>
-        <FormResources Include="Alimentar2.dfm"/>
-        <FormResources Include="Alimentar3.dfm"/>
-        <FormResources Include="AlimentarResult.dfm"/>
-        <FormResources Include="Individual1.dfm"/>
-        <FormResources Include="Individual2.dfm"/>
-        <FormResources Include="Individual3.dfm"/>
         <FormResources Include="IndividualResult.dfm"/>
+        <FormResources Include="Individual3.dfm"/>
+        <FormResources Include="TellMeMore.dfm"/>
+        <FormResources Include="Alimentar3.dfm"/>
+        <FormResources Include="Alimentar2.dfm"/>
+        <FormResources Include="Alimentar1.dfm"/>
+        <FormResources Include="Individual2.dfm"/>
+        <FormResources Include="Individual1.dfm"/>
+        <FormResources Include="AlimentarResult.dfm"/>
+        <FormResources Include="House1.dfm"/>
+        <FormResources Include="House2.dfm"/>
+        <FormResources Include="House3.dfm"/>
+        <FormResources Include="HouseResult.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -29,6 +29,7 @@ __published:	// IDE-managed Components
 	TLabel *Label7;
 	TLabel *Label8;
 	void __fastcall ExitClick(TObject *Sender);
+	 void __fastcall Button1Click (TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall MenuClick(TObject *Sender);
     void __fastcall ReadAndDisplayFileContent();

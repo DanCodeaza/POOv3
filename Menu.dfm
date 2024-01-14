@@ -2,8 +2,8 @@ object MenuForm: TMenuForm
   Left = 0
   Top = 0
   Caption = 'Menu'
-  ClientHeight = 404
-  ClientWidth = 651
+  ClientHeight = 395
+  ClientWidth = 645
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -3078,7 +3078,7 @@ object MenuForm: TMenuForm
     Top = 128
     Width = 201
     Height = 25
-    Caption = 'Calculate your individul footprint'
+    Caption = 'Calculate your individual footprint'
     TabOrder = 0
     OnClick = ACIndividualClick
   end
@@ -3089,6 +3089,7 @@ object MenuForm: TMenuForm
     Height = 25
     Caption = 'Calculate your house footprint'
     TabOrder = 1
+    OnClick = ACHouseClick
   end
   object ACAlimentar: TButton
     Left = 64

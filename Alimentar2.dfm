@@ -12,34 +12,6 @@ object AlimentarForm2: TAlimentarForm2
   Font.Style = []
   OnResize = FormResize
   TextHeight = 15
-  object Label1: TLabel
-    Left = 48
-    Top = 40
-    Width = 141
-    Height = 15
-    Caption = 'How often do you eat out?'
-  end
-  object Label2: TLabel
-    Left = 48
-    Top = 172
-    Width = 159
-    Height = 15
-    Caption = 'Do you usually cook at home?'
-  end
-  object Label3: TLabel
-    Left = 48
-    Top = 296
-    Width = 204
-    Height = 15
-    Caption = 'Do you frequently consume fast-food?'
-  end
-  object Label4: TLabel
-    Left = 41
-    Top = 428
-    Width = 188
-    Height = 15
-    Caption = 'Do you consume organic products?'
-  end
   object Previous: TButton
     Left = 375
     Top = 400
@@ -72,6 +44,7 @@ object AlimentarForm2: TAlimentarForm2
     Top = 61
     Width = 248
     Height = 105
+    Caption = 'How often do you eat out?'
     Items.Strings = (
       'Rarely, only on special occasions.'
       'Weekly.'
@@ -83,6 +56,7 @@ object AlimentarForm2: TAlimentarForm2
     Top = 193
     Width = 248
     Height = 105
+    Caption = 'Do you usually cook at home?'
     Items.Strings = (
       'Yes, everything I eat is cooked at home.'
       'I prefer to use catering services.')
@@ -93,6 +67,7 @@ object AlimentarForm2: TAlimentarForm2
     Top = 317
     Width = 248
     Height = 105
+    Caption = 'Do you frequently consume fast-food?'
     Items.Strings = (
       'Yes, frequently'
       'Occasionally'
@@ -102,8 +77,9 @@ object AlimentarForm2: TAlimentarForm2
   object RadioGroup4: TRadioGroup
     Left = 41
     Top = 449
-    Width = 185
+    Width = 232
     Height = 105
+    Caption = 'Do you consume organic products?'
     Items.Strings = (
       'Yes, exclusively'
       'Yes, sometimes'
