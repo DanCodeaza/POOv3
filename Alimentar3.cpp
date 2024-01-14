@@ -78,7 +78,7 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	}
 
 	// Close the file
-	inputFile.close();
+	inputFile2.close();
 
 	 std::ifstream inputFile3("answer3");
 
@@ -97,98 +97,34 @@ void __fastcall TAlimentarForm3::NextClick(TObject *Sender)
 	}
 
 	// Close the file
-	inputFile.close();
-	int j,k,j1,j2,j3;
-	j=0,j1=0,j2=0,j3=0;
-
-	if(v[0]==0)
-		j1=j1+730*4;
-	else if (v[0]==1)
-		j1=j1+730*2;
-	else if(v[0]==2)
-		j1=j1+730*1;
-
-		if(v[1]==0)
-		j1=j1+730*10;
-	else if (v[1]==1)
-		j1=j1+730*3;
-
-		if(v[2]==0)
-		j1=j1+730*1;
-	else if (v[2]==1)
-		j1=j1+730*3;
-	else if(v[2]==2)
-		j1=j1+730*8;
-
-	if(v[3]==0)
-		j1=j1+730*1;
-	else if (v[3]==1)
-		j1=j1+730*2;
-	else if(v[3]==2)
-		j1=j1+730*4;
-
-	if(v[4]==0)
-		j2=j2+730*10;
-	else if (v[4]==1)
-		j2=j2+730*4;
-	else if(v[4]==2)
-		j2=j2+730*1;
-
-	if(v[5]==0)
-		j2=j2+730*1;
-	else if (v[5]==1)
-		j2=j2+730*2;
-	else if(v[5]==2)
-		j2=j2+730*3;
-
-	if(v[6]==0)
-		j2=j2+730*7;
-	else if (v[6]==1)
-		j2=j2+730*3;
-	else if(v[6]==2)
-		j2=j2+730*1;
-
-	if(v[7]==0)
-		j2=j2+730*1;
-	else if (v[7]==1)
-		j2=j2+730*2;
-	else if(v[7]==2)
-		j2=j2+730*3;
-
-
-	if(v[8]==0)
-		j3=j3+730*1;
-	else if (v[8]==1)
-		j3=j3+730*2;
-	else if(v[8]==2)
-		j3=j3+730*3;
-
-	if(v[9]==0)
-		j3=j3+730*2;
-	else if (v[9]==1)
-		j3=j3+730*1;
-	else if(v[9]==2)
-		j3=j3+730*1;
-
-	ShowMessage(j3);
-	ShowMessage(j2);
-    ShowMessage(j1);
-    j=j1+j2+j3;
-
-	if(j1<4380)
+	inputFile3.close();
+	int ok1=1,ok2=1,ok3=1;
+	for(i=0;i<4;i++)
+		if(v[i]<0)
+			ok1=0;
+	for(i=4;i<8;i++)
+		if(v[i]<0)
+			ok2=0;
+	for(i=8;i<10;i++)
+		if(v[i]<0)
+			ok3=0;
+	if(ok1==0)
 		{ShowMessage("Uncomplete quiz!Please fill all questions!");
+        ok1=1;
 		TAlimentarForm1 *newForm1= new TAlimentarForm1(NULL);
 		newForm1->Show();
 		this->Hide();
 		 }
-	else if (v[4]==-1 || v[5]==-1 || v[6]==-1 || v[7]==-1) {
+	else if (ok2==0) {
 		ShowMessage("Uncomplete quiz!Please fill all questions!");
+		ok2=1;
 		TAlimentarForm2 *newForm1= new TAlimentarForm2(NULL);
 		newForm1->Show();
 		this->Hide();
 		 }
-	else if(v[8]==-1 || v[9]==-1 || v[10]==-1 || v[11]==-1){
+	else if(ok3==0){
 		ShowMessage("Uncomplete quiz!Please fill all questions!");
+        ok3=1;
 		TAlimentarForm3 *newForm1= new TAlimentarForm3(NULL);
 		newForm1->Show();
 		this->Hide();}

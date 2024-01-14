@@ -77,11 +77,15 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*2;
 	else if(v[0]==2)
 		j=j+730*1;
+	else
+		j=j+0;
 
 		if(v[1]==0)
 		j=j+730*10;
 	else if (v[1]==1)
 		j=j+730*3;
+	else
+		j=j+0;
 
 		if(v[2]==0)
 		j=j+730*1;
@@ -89,6 +93,8 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*3;
 	else if(v[2]==2)
 		j=j+730*8;
+	else
+		j=j+0;
 
 	if(v[3]==0)
 		j=j+730*1;
@@ -96,6 +102,8 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*2;
 	else if(v[3]==2)
 		j=j+730*4;
+	else
+		j=j+0;
 
 	if(v[4]==0)
 		j=j+730*10;
@@ -103,13 +111,15 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*4;
 	else if(v[4]==2)
 		j=j+730*1;
+	else
+		j=j+0;
 
 	if(v[5]==0)
 		j=j+730*1;
 	else if (v[5]==1)
 		j=j+730*2;
-	else if(v[5]==2)
-		j=j+730*3;
+	else
+		j=j+0;
 
 	if(v[6]==0)
 		j=j+730*7;
@@ -117,6 +127,8 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*3;
 	else if(v[6]==2)
 		j=j+730*1;
+	else
+		j=j+0;
 
 	if(v[7]==0)
 		j=j+730*1;
@@ -124,33 +136,33 @@ TAlimentarFormResult *AlimentarFormResult;
 		j=j+730*2;
 	else if(v[7]==2)
 		j=j+730*3;
-
+	else
+		j=j+0;
 
 	if(v[8]==0)
-		j=j+730*1;
+		j=j+730*3;
 	else if (v[8]==1)
 		j=j+730*2;
 	else if(v[8]==2)
-		j=j+730*3;
+		j=j+730*1;
+	else
+		j=j+0;
 
 	if(v[9]==0)
-		j=j+730*2;
+		j=j+730*1;
 	else if (v[9]==1)
 		j=j+730*1;
 	else if(v[9]==2)
-		j=j+730*1;
+		j=j+730*2;
+	else
+		j=j+0;
 
-	if(j<18979)
-		{ShowMessage("Uncomplete quiz!Please fill all questions!");
-		TAlimentarForm1 *newForm1= new TAlimentarForm1(NULL);
-		newForm1->Show();
-		this->Hide();
-		 }
+
 	Label4->Caption =j;
 	int pb=25,o;
 	o=j;
-	o=o-18980;
-	o=o/136;
+	o=o-8760;
+	o=o/400;
 	pb=pb+o;
     pb=100-pb;
 	Label5->Caption=pb;
