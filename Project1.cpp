@@ -4,20 +4,21 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("Menu.cpp", MenuForm);
 USEFORM("IndividualResult.cpp", IndividualFormResult);
 USEFORM("Individual3.cpp", IndividualForm3);
+USEFORM("Individual2.cpp", IndividualForm2);
+USEFORM("Individual1.cpp", IndividualForm1);
 USEFORM("TellMeMore.cpp", TellMeMoreForm);
+USEFORM("Menu.cpp", MenuForm);
+USEFORM("AlimentarResult.cpp", AlimentarFormResult);
 USEFORM("Alimentar3.cpp", AlimentarForm3);
 USEFORM("Alimentar2.cpp", AlimentarForm2);
 USEFORM("Alimentar1.cpp", AlimentarForm1);
-USEFORM("Individual2.cpp", IndividualForm2);
-USEFORM("Individual1.cpp", IndividualForm1);
-USEFORM("AlimentarResult.cpp", AlimentarFormResult);
-USEFORM("House1.cpp", HouseForm1);
-USEFORM("House2.cpp", HouseForm2);
-USEFORM("House3.cpp", HouseForm3);
 USEFORM("HouseResult.cpp", HouseFormResult);
+USEFORM("House3.cpp", HouseForm3);
+USEFORM("House2.cpp", HouseForm2);
+USEFORM("House1.cpp", HouseForm1);
+USEFORM("Credits.cpp", CreditForm);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -38,6 +39,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->CreateForm(__classid(THouseForm2), &HouseForm2);
 		Application->CreateForm(__classid(THouseForm3), &HouseForm3);
 		Application->CreateForm(__classid(THouseFormResult), &HouseFormResult);
+		Application->CreateForm(__classid(TCreditForm), &CreditForm);
 		Application->Run();
 	}
 	catch (Exception &exception)

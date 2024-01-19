@@ -147,6 +147,12 @@
             <DependentOn>AlimentarResult.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Credits.cpp">
+            <Form>CreditForm</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Credits.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
         <CppCompile Include="House1.cpp">
             <Form>HouseForm1</Form>
             <FormType>dfm</FormType>
@@ -228,6 +234,7 @@
         <FormResources Include="House3.dfm"/>
         <FormResources Include="House2.dfm"/>
         <FormResources Include="House1.dfm"/>
+        <FormResources Include="Credits.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

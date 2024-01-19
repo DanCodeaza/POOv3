@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef MenuH
-#define MenuH
+#ifndef CreditsH
+#define CreditsH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
@@ -9,33 +9,31 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Imaging.pngimage.hpp>
-#include <Vcl.Imaging.jpeg.hpp>
 //---------------------------------------------------------------------------
-class TMenuForm : public TForm
+class TCreditForm : public TForm
 {
 __published:	// IDE-managed Components
 	TLabel *Label1;
-	TButton *ACIndividual;
-	TButton *ACHouse;
-	TButton *ACAlimentar;
-	TButton *TellMeMore;
-	TButton *Exit;
 	TImage *Image1;
-	TImage *Image2;
-	TLabel *Label2;
-	TButton *Credits;
-	void __fastcall ExitClick(TObject *Sender);
-	void __fastcall TellMeMoreClick(TObject *Sender);
-	void __fastcall ACAlimentarClick(TObject *Sender);
+	TButton *Exit;
+	TButton *Menu;
+	TLabel *Stud;
+	TLabel *Stud1;
+	TLabel *Stud2;
+	TLabel *Stud3;
+	TLabel *Stud4;
+	TLabel *Stud5;
+	TLabel *Teachers;
+	TLabel *teach1;
+	TLabel *Teach2;
 	void __fastcall FormResize(TObject *Sender);
-	void __fastcall ACIndividualClick(TObject *Sender);
-	void __fastcall ACHouseClick(TObject *Sender);
-	void __fastcall CreditsClick(TObject *Sender);
+	void __fastcall ExitClick(TObject *Sender);
+	void __fastcall MenuClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TMenuForm(TComponent* Owner);
+	__fastcall TCreditForm(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TMenuForm *MenuForm;
+extern PACKAGE TCreditForm *CreditForm;
 //---------------------------------------------------------------------------
 #endif

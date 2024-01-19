@@ -9,6 +9,7 @@
 #include "Alimentar1.h"
 #include "Individual1.h"
 #include "House1.h"
+#include "Credits.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -85,7 +86,11 @@ void __fastcall TMenuForm::FormResize(TObject *Sender)
 {
 	Exit->Width = ClientWidth / 20;
 	Exit->Height = ClientHeight / 20;
-    Exit->Top = 975;
+	Exit->Top = 975;
+	Credits->Width = ClientWidth / 20;
+	Credits->Height = ClientHeight / 20;
+	Credits->Top = 975;
+	Credits->Left = 200;
 	ACAlimentar->Width = ClientWidth / 3;
 	ACAlimentar->Height = ClientHeight / 20;
 	ACAlimentar->Top = 590;
@@ -100,8 +105,15 @@ void __fastcall TMenuForm::FormResize(TObject *Sender)
 	TellMeMore->Top = 700;
 	Label1->Width = ClientWidth - 100;
 	Label1->Left = 50;
-	Image1->Top = 430;
-    Image1->Left = 1000;
+	Image1->Top = 370;
+	Image1->Left = 1000;
+	Image2->Top = 900;
+	Image2->Left = 1550;
+	Label2->Top = 925;
+	Label2->Left = ClientWidth / 3;
+	Label2->Width =    ClientWidth / 3;
+	Label2->WordWrap = true;  // Enable word wrapping
+	Label2->AutoSize = false;
 }
 //---------------------------------------------------------------------------
 
@@ -118,6 +130,17 @@ void __fastcall TMenuForm::ACHouseClick(TObject *Sender)
 	THouseForm1 *newForm1 = new THouseForm1(NULL);
 	newForm1->Show();
 	this->Hide();
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TMenuForm::CreditsClick(TObject *Sender)
+{
+	TCreditForm *newForm1 = new TCreditForm(NULL);
+	newForm1->Show();
+	this->Hide();
+
 }
 //---------------------------------------------------------------------------
 
