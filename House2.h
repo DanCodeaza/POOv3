@@ -8,6 +8,7 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
 //---------------------------------------------------------------------------
 class THouseForm2 : public TForm
 {
@@ -22,6 +23,7 @@ __published:	// IDE-managed Components
 	TRadioGroup *RadioGroup2;
 	TRadioGroup *RadioGroup3;
 	TRadioGroup *RadioGroup4;
+	TImage *Image1;
 	void __fastcall PreviousClick(TObject *Sender);
 	void __fastcall NextClick(TObject *Sender);
 	void __fastcall ExitClick(TObject *Sender);
