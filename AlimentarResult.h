@@ -19,23 +19,17 @@ __published:	// IDE-managed Components
 	TButton *Button2;
 	TButton *Exit;
 	TProgressBar *ProgressBar1;
-	TLabel *Label2;
-	TLabel *Label3;
-	TMemo *Feedback;
 	TLabel *Label4;
-	TLabel *Label5;
-	TLabel *Label6;
 	TButton *Menu;
 	TLabel *Label7;
 	TLabel *Label8;
-	TButton *Button3;
+	TLabel *Label6;
 	void __fastcall ExitClick(TObject *Sender);
 	 void __fastcall Button1Click (TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall MenuClick(TObject *Sender);
     void __fastcall ReadAndDisplayFileContent();
 	void __fastcall Button2Click(TObject *Sender);
-	void __fastcall Button3Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TAlimentarFormResult(TComponent* Owner);

@@ -167,8 +167,7 @@ TAlimentarFormResult *AlimentarFormResult;
 	o=o/400;
 	pb=pb+o;
     pb=100-pb;
-	Label5->Caption=pb;
-	ProgressBar1->Position =pb;
+	ProgressBar1->Position = pb;
 }
 
 
@@ -195,7 +194,13 @@ void __fastcall TAlimentarFormResult::FormResize(TObject *Sender)
 	Exit->Top = 1000;
 	Exit->Left = 1750;
 	Menu->Top = 1000;
-    Menu->Left = 1625;
+	Menu->Left = 1625;
+	Label7->Left=100;
+	Label7->Top=300;
+	Button2->Left=95;
+	Button2->Top=600;
+	Button1->Left=95;
+	Button1->Top=500;
 }
 //---------------------------------------------------------------------------
 
@@ -297,12 +302,4 @@ void __fastcall TAlimentarFormResult::Button2Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TAlimentarFormResult::Button3Click(TObject *Sender)
-{
-	TStringList *sl = new TStringList();
-	sl->Assign(Feedback->Lines);
-	sl->SaveToFile("Feedback", TEncoding::UTF8);
-	delete sl;
-}
-//---------------------------------------------------------------------------
 

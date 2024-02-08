@@ -14,103 +14,50 @@ object IndividualFormResult: TIndividualFormResult
   OnResize = FormResize
   TextHeight = 15
   object Label1: TLabel
-    Left = 40
-    Top = 32
-    Width = 183
+    Left = 56
+    Top = 56
+    Width = 157
     Height = 15
-    Caption = 'Your carbon individual footprint is:'
+    Caption = 'Your carbon feed footprint is :'
   end
-  object Label2: TLabel
-    Left = 240
-    Top = 32
+  object Label4: TLabel
+    Left = 232
+    Top = 56
     Width = 6
     Height = 15
     Caption = 'x'
   end
-  object Label3: TLabel
-    Left = 272
-    Top = 32
+  object Label7: TLabel
+    Left = 56
+    Top = 160
+    Width = 3
+    Height = 15
+    WordWrap = True
+  end
+  object Label8: TLabel
+    Left = 287
+    Top = 56
     Width = 53
     Height = 15
     Caption = 'kg of CO2'
   end
-  object Label4: TLabel
-    Left = 40
-    Top = 64
-    Width = 128
-    Height = 15
-    Caption = 'You are amoung the top'
-  end
-  object Label5: TLabel
-    Left = 189
-    Top = 64
-    Width = 6
-    Height = 15
-    Caption = 'x'
-  end
   object Label6: TLabel
-    Left = 212
-    Top = 64
-    Width = 167
+    Left = 64
+    Top = 188
+    Width = 689
     Height = 15
-    Caption = '% of the most polluting people.'
-  end
-  object Label7: TLabel
-    Left = 40
-    Top = 136
-    Width = 34
-    Height = 15
-    Caption = 'Label7'
-  end
-  object Label8: TLabel
-    Left = 40
-    Top = 531
-    Width = 101
-    Height = 15
-    Caption = 'Give us a feedback:'
-  end
-  object Exit: TButton
-    Left = 696
-    Top = 96
-    Width = 75
-    Height = 25
-    Caption = 'Exit'
-    TabOrder = 0
-    OnClick = ExitClick
-  end
-  object Menu: TButton
-    Left = 720
-    Top = 176
-    Width = 75
-    Height = 25
-    Caption = 'Back to menu'
-    TabOrder = 1
-    OnClick = MenuClick
-  end
-  object FeedBack: TMemo
-    Left = 40
-    Top = 568
-    Width = 705
-    Height = 265
-    Lines.Strings = (
-      'FeedBack')
-    TabOrder = 2
-  end
-  object ProgressBar1: TProgressBar
-    Left = 38
-    Top = 101
-    Width = 243
-    Height = 21
-    TabOrder = 3
+    Caption = 
+      'Not eco Friendly          |    You can do better     |     You a' +
+      're on the  good path     |     You are  good with the  plantet  ' +
+      '   |     Eco-Friendly'
   end
   object Button1: TButton
     Left = 56
     Top = 304
     Width = 225
     Height = 41
-    Caption = 'Calculate your alimentar footprint'
-    TabOrder = 4
-    OnClick = Button1Click
+    Caption = 'Calculate your individual footprint'
+    TabOrder = 0
   end
   object Button2: TButton
     Left = 56
@@ -118,16 +65,32 @@ object IndividualFormResult: TIndividualFormResult
     Width = 225
     Height = 41
     Caption = 'Calculate your house footprint'
-    TabOrder = 5
+    TabOrder = 1
     OnClick = Button2Click
   end
-  object Button3: TButton
-    Left = 760
-    Top = 808
+  object Exit: TButton
+    Left = 820
+    Top = 184
     Width = 75
     Height = 25
-    Caption = 'Submit'
-    TabOrder = 6
-    OnClick = Button3Click
+    Caption = 'Exit'
+    TabOrder = 2
+    OnClick = ExitClick
+  end
+  object ProgressBar1: TProgressBar
+    Left = 56
+    Top = 117
+    Width = 697
+    Height = 50
+    TabOrder = 3
+  end
+  object Menu: TButton
+    Left = 712
+    Top = 304
+    Width = 85
+    Height = 25
+    Caption = 'Back to menu'
+    TabOrder = 4
+    OnClick = MenuClick
   end
 end

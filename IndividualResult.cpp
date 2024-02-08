@@ -109,7 +109,13 @@ void __fastcall TIndividualFormResult::FormResize(TObject *Sender)
 	Exit->Top = 1000;
 	Exit->Left = 1750;
 	Menu->Top = 1000;
-    Menu->Left = 1625;
+	Menu->Left = 1625;
+	Label7->Left=100;
+	Label7->Top=300;
+	Button2->Left=95;
+	Button2->Top=600;
+	Button1->Left=95;
+	Button1->Top=500;
 }
 
 void __fastcall TIndividualFormResult::FormActivate(TObject *Sender)
@@ -312,15 +318,15 @@ void __fastcall TIndividualFormResult::FormActivate(TObject *Sender)
 	else
 		j=j+0;
 
-	Label2->Caption=j;
-    int o;
+	Label4->Caption=j;
+	int o;
 	o=j;
 	o=o-1020;
 	o=o/46;
 	o=o+25;
-	o=100-o;
+    o=100-o
 	ProgressBar1->Position=o;
-    Label5->Caption =o;
+
 }
 //---------------------------------------------------------------------------
 
@@ -411,15 +417,6 @@ void __fastcall TIndividualFormResult::Button2Click(TObject *Sender)
 	THouseForm1 *newForm1 = new THouseForm1(NULL);
 	newForm1->Show();
 	this->Hide();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TIndividualFormResult::Button3Click(TObject *Sender)
-{
-	TStringList *sl = new TStringList();
-	sl->Assign(FeedBack->Lines);
-	sl->SaveToFile("Feedback", TEncoding::UTF8);
-	delete sl;
 }
 //---------------------------------------------------------------------------
 

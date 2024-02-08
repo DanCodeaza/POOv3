@@ -2,8 +2,8 @@ object AlimentarFormResult: TAlimentarFormResult
   Left = 0
   Top = 0
   Caption = 'AlimentarFormResult'
-  ClientHeight = 744
-  ClientWidth = 1044
+  ClientHeight = 735
+  ClientWidth = 1038
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,40 +19,12 @@ object AlimentarFormResult: TAlimentarFormResult
     Height = 15
     Caption = 'Your carbon feed footprint is :'
   end
-  object Label2: TLabel
-    Left = 56
-    Top = 88
-    Width = 124
-    Height = 15
-    Caption = 'You are among the top '
-  end
-  object Label3: TLabel
-    Left = 208
-    Top = 88
-    Width = 167
-    Height = 15
-    Caption = '% of the most polluting people.'
-  end
   object Label4: TLabel
     Left = 232
     Top = 56
     Width = 6
     Height = 15
     Caption = 'x'
-  end
-  object Label5: TLabel
-    Left = 190
-    Top = 88
-    Width = 6
-    Height = 15
-    Caption = 'x'
-  end
-  object Label6: TLabel
-    Left = 64
-    Top = 443
-    Width = 94
-    Height = 15
-    Caption = 'Give us Feedback:'
   end
   object Label7: TLabel
     Left = 56
@@ -67,6 +39,16 @@ object AlimentarFormResult: TAlimentarFormResult
     Width = 53
     Height = 15
     Caption = 'kg of CO2'
+  end
+  object Label6: TLabel
+    Left = 64
+    Top = 188
+    Width = 689
+    Height = 15
+    Caption = 
+      'Not eco Friendly          |    You can do better     |     You a' +
+      're on the  good path     |     You are  good with the  plantet  ' +
+      '   |     Eco-Friendly'
   end
   object Button1: TButton
     Left = 56
@@ -97,35 +79,17 @@ object AlimentarFormResult: TAlimentarFormResult
   object ProgressBar1: TProgressBar
     Left = 56
     Top = 117
-    Width = 309
-    Height = 21
+    Width = 697
+    Height = 50
     TabOrder = 3
   end
-  object Feedback: TMemo
-    Left = 64
-    Top = 464
-    Width = 553
-    Height = 233
-    Lines.Strings = (
-      'Feedback')
-    TabOrder = 4
-  end
   object Menu: TButton
-    Left = 648
-    Top = 192
+    Left = 712
+    Top = 304
     Width = 85
     Height = 25
     Caption = 'Back to menu'
-    TabOrder = 5
+    TabOrder = 4
     OnClick = MenuClick
-  end
-  object Button3: TButton
-    Left = 631
-    Top = 672
-    Width = 75
-    Height = 25
-    Caption = 'Submit'
-    TabOrder = 6
-    OnClick = Button3Click
   end
 end
