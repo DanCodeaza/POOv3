@@ -201,6 +201,7 @@ void __fastcall TAlimentarFormResult::FormResize(TObject *Sender)
 	Button2->Top=600;
 	Button1->Left=95;
 	Button1->Top=500;
+
 }
 //---------------------------------------------------------------------------
 
