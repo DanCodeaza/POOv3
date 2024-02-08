@@ -8,6 +8,8 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ComCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
 //---------------------------------------------------------------------------
 class THouseFormResult : public TForm
 {
@@ -22,6 +24,7 @@ __published:	// IDE-managed Components
 	TButton *Exit;
 	TProgressBar *ProgressBar1;
 	TButton *Menu;
+	TImage *Image1;
 	void __fastcall MenuClick(TObject *Sender);
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
