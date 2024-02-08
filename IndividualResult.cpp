@@ -324,7 +324,7 @@ void __fastcall TIndividualFormResult::FormActivate(TObject *Sender)
 	o=o-1020;
 	o=o/46;
 	o=o+25;
-    o=100-o
+    o=100-o;
 	ProgressBar1->Position=o;
 
 }

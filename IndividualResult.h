@@ -24,6 +24,7 @@ __published:	// IDE-managed Components
 	TButton *Exit;
 	TProgressBar *ProgressBar1;
 	TButton *Menu;
+	TImage *Image1;
 	void __fastcall ExitClick(TObject *Sender);
 	void __fastcall MenuClick(TObject *Sender);
 	void __fastcall FormResize(TObject *Sender);
